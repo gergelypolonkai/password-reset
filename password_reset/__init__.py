@@ -1,3 +1,4 @@
+# -*- coding: utf8
 import getpass
 from gi.repository import GnomeKeyring
 from xdg import BaseDirectory
@@ -83,7 +84,7 @@ def check_password(info, old_passwords, new_password=None):
 
 def main(args):
     cache_file = os.path.join(BaseDirectory.save_cache_path('password_reset'),
-                              'old-passwords')
+                              'old-passwords.gpg')
     old_password = getpass.getpass("Enter the password we are looking for: ")
     new_password = getpass.getpass("Enter the new password: ")
 
