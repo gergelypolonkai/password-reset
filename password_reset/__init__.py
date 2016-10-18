@@ -1,4 +1,7 @@
 # -*- coding: utf8
+# Copyright (C) 2016, Gergely Polonkai
+# Licensed under GNU GPL 3+
+
 import getpass
 from gi.repository import GnomeKeyring
 from xdg import BaseDirectory
